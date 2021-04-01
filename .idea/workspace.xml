@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eba9507-d784-4576-bdbb-c8f11e86ee58" name="Default Changelist" comment="HW.Week 4 commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/week4/demo/JDBCDemoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/caoyang2019211001001113-1.0-SNAPSHOT/WEB-INF/classes/com/caoyang/week4/demo/JDBCDemoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/caoyang2019211001001113-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/caoyang2019211001001113-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1eba9507-d784-4576-bdbb-c8f11e86ee58" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +129,7 @@
       <workItem from="1617180066904" duration="317000" />
       <workItem from="1617187441950" duration="835000" />
       <workItem from="1617243363887" duration="568000" />
-      <workItem from="1617244077757" duration="333000" />
+      <workItem from="1617244077757" duration="431000" />
     </task>
     <task id="LOCAL-00001" summary="HW.Week 2 commit">
       <created>1615898186368</created>
@@ -173,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616637700401</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="HW.Week 4 commit">
+      <created>1617244456890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617244456890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
