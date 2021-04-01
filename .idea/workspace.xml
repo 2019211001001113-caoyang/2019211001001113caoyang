@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eba9507-d784-4576-bdbb-c8f11e86ee58" name="Default Changelist" comment="" />
+    <list default="true" id="1eba9507-d784-4576-bdbb-c8f11e86ee58" name="Default Changelist" comment="HW.Week 4 commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/week4/demo/JDBCDemoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/caoyang2019211001001113-1.0-SNAPSHOT/WEB-INF/classes/com/caoyang/week4/demo/JDBCDemoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/caoyang2019211001001113-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/caoyang2019211001001113-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +27,7 @@
       <list>
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -120,7 +128,15 @@
       <workItem from="1616506432536" duration="4588000" />
       <workItem from="1616569154025" duration="1454000" />
       <workItem from="1616599168908" duration="82000" />
-      <workItem from="1616637070433" duration="573000" />
+      <workItem from="1616637070433" duration="747000" />
+      <workItem from="1616678476411" duration="27000" />
+      <workItem from="1616680334651" duration="449000" />
+      <workItem from="1617169529137" duration="1580000" />
+      <workItem from="1617174679331" duration="5319000" />
+      <workItem from="1617180066904" duration="317000" />
+      <workItem from="1617187441950" duration="835000" />
+      <workItem from="1617243363887" duration="568000" />
+      <workItem from="1617244077757" duration="333000" />
     </task>
     <task id="LOCAL-00001" summary="HW.Week 2 commit">
       <created>1615898186368</created>
@@ -150,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616637197166</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HW.Week 3 commit">
+      <created>1616637700401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616637700401</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +182,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HW.Week 2 commit" />
     <MESSAGE value="HW.Week 3 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 3 commit" />
+    <MESSAGE value="HW.Week 4 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 4 commit" />
   </component>
 </project>
