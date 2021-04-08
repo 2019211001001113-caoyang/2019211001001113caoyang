@@ -4,10 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <!--add code about new servLet-->
-    <servlet>
-        <servlet-name>cy</servlet-name>
-        <servlet-class>com.caoyang.week2.demo.HelloWorldServlet</servlet-class>
-   </servlet>
+
     <servlet>
         <servlet-name>LifeCycleServlet</servlet-name>
         <servlet-class>caoyang.week3.demo.LifeCycleServlet</servlet-class>
@@ -38,12 +35,16 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+
     <servlet-mapping>
     <servlet-name>JDBCDemoServlet</servlet-name>
         <url-pattern>/jdbc</url-pattern>
     </servlet-mapping>
 
-
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>caoyang.week5.demo.LoginServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
    <servlet-name>LifeCycleServlet</servlet-name>
