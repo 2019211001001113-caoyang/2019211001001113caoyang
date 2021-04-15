@@ -12,10 +12,18 @@ import java.sql.SQLException;
 
 @WebServlet(name = "LoginServlet",value = "/login")
 public class LoginServlet extends HttpServlet {
-    Connection con=null; //class variable
+
+
+    Connection con=null;
     @Override
     public void init() throws ServletException {
         super.init();
+
+        ///tODO 1:GET 4 CONTEXT PARAM - DRIVER , URL , USERNAME , PASSWORD
+        //TODO 2: GET JDBC connection
+        con = (Connection) getServletContext().getAttribute("con");
+
+
         //only one connection
         //String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
         //String url="jdbc:sqlserver://localhost:1433;DatabaseName=userdb";
@@ -42,24 +50,35 @@ public class LoginServlet extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+doPost(request,response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
-        PrintWriter writer = response.getWriter();
-
+        PrintWriter out= response.getWriter();
+        //TODO 3: GET REQUEST PARAMETER - USERNAME AND PASSWORD
         String username=request.getParameter("username");
         String password=request.getParameter("password");
-        String sql_1="select * from [user]"+
-                "WHERE username='"+username+"'"+" AND "+
-                "password = '"+password+"'"+
-                ';';
-        ResultSet rs= null;
+        //TODO 4: VALIDATE USER - SELEECT * FROM USERTABLE WHERE USERNAME='XXX'
+        // AND PASSWORD='YYY'
+        String sql="select username,password from usertable where username='"+username+"' and password='";
         try {
-            rs = con.createStatement().executeQuery(sql_1);
+            ResultSet rs =con.createStatement().executeQuery(sql);
+        if(rs.next()){
+
+            request.setAttribute("id",rs.getInt("id"));
+            request.setAttribute("uesrname",rs.getInt("username"));
+            request.setAttribute("password",rs.getInt("password"));
+            request.setAttribute("gender",rs.getInt("gender"));
+            request.setAttribute("birthdate",rs.getInt("birthdate"));
+            request.getRequestDispatcher("userInfo.jsp").forward(request,response);
+
+        }else {
+         request.setAttribute("message","Username or Password Error!!!");
+         request.getRequestDispatcher("login.jsp").forward(request,response);
+
+        }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

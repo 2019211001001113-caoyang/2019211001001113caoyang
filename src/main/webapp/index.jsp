@@ -22,10 +22,17 @@
 <br/>
 <a href="login.jsp">login-week5</a>
 
-
-
-
-<form>
+<h2>Welcome to My Online Shop Home Page. </h2> <br>
+<form method= "get" target= '_ blank ’action= "search">
+    <!-- <url-pattern>/ search< /url-pattern> -->|
+    <input type= "text" name= "txt" size=30/ >
+    <select name= "search">
+        <option value= "baidu"> Baidu< /option>
+        <option value= "bing">Bing< /option>
+        <option value= "sougo ">sougo< /option>
+    </select>
+    < input type= "submit" value= "Search"/>
+    < /form>
 </form>
 
 <%@include file="footer.jsp"%>
