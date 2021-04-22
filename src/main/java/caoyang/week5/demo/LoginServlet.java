@@ -1,5 +1,7 @@
 package caoyang.week5.demo;
 
+import com.caoyang.model.User;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -50,7 +52,8 @@ public class LoginServlet extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-doPost(request,response);
+request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request,response);
+
     }
 
     @Override
@@ -60,9 +63,28 @@ doPost(request,response);
         //TODO 3: GET REQUEST PARAMETER - USERNAME AND PASSWORD
         String username=request.getParameter("username");
         String password=request.getParameter("password");
+
+        UserDao userDao=new UserDao();
+        try{
+         User user=  userDao.findByUsernamePassword(con,username,password);
+      if(user!=null){
+          request.setAttribute("user",user);
+          request.getRequestDispatcher("WEB-INF/views/useInfo.jsp").forward(request,response);
+      }else {
+          request.setAttribute("message","Username or Password Error!!!");
+          request.getRequestDispatcher("login.jsp").forward(request,response);
+      }
+
+        }catch (SQLException throwables){
+            throwables.printStackTrace();
+        }
+
+
+
+
         //TODO 4: VALIDATE USER - SELEECT * FROM USERTABLE WHERE USERNAME='XXX'
         // AND PASSWORD='YYY'
-        String sql="select username,password from usertable where username='"+username+"' and password='";
+       /* String sql="select id,username,password,email,gender,birthdate from usertable where username='"+username+"' and password='";
         try {
             ResultSet rs =con.createStatement().executeQuery(sql);
         if(rs.next()){
@@ -97,3 +119,4 @@ doPost(request,response);
         }
     }
 }
+*/
