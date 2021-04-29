@@ -1,5 +1,6 @@
 package caoyang.week5.demo;
 
+import Dao.UserDao;
 import com.caoyang.model.User;
 
 import javax.servlet.*;
@@ -65,21 +66,40 @@ request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request,response
         String password=request.getParameter("password");
 
         UserDao userDao=new UserDao();
-        try{
-         User user=  userDao.findByUsernamePassword(con,username,password);
-      if(user!=null){
-          request.setAttribute("user",user);
-          request.getRequestDispatcher("WEB-INF/views/useInfo.jsp").forward(request,response);
-      }else {
-          request.setAttribute("message","Username or Password Error!!!");
-          request.getRequestDispatcher("login.jsp").forward(request,response);
-      }
 
-        }catch (SQLException throwables){
-            throwables.printStackTrace();
+
+
+        try {
+            UserDao userDao=new UserDao();
+            User user= userDao.findByUsernamePassword(con, username, password);
+            if (user!=null) {
+
+                String.rememberMe=request.getParameter("rememberMe");
+             if(!=null && .equals("1")){
+                 Cookie usernameCookie=new Cookie("cUsername",user.getUsername());
+                 Cookie passwordCookie=new Cookie("cPassword",user.getPassword());
+                 Cookie rememberMeCookie=new Cookie("cRememberMe",);
+                 usernameCookie.setMaxAge(5);
+                passwordCookie.setMaxAge(5);
+                 rememberMeCookie.setMaxAge(5);
+                 response.addCookie(usernameCookie);
+                 response.addCookie(passwordCookie);
+                 response.addCookie(rememberMeCookie);
+                }
+
+                HttpSession session = request.getSession();
+                System.out.println("session id-->" + session.getId());
+
+                session.setMaxInactiveInterval(10);
+                session.setAttribute("user", user);
+                request.getRequestDispatcher("WEB-INF/views/useInfo.jsp").forward(request, response);
+            } else {
+                request.setAttribute("message", "Username or Password Error!!!");
+                request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request, response);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-
-
 
 
         //TODO 4: VALIDATE USER - SELEECT * FROM USERTABLE WHERE USERNAME='XXX'

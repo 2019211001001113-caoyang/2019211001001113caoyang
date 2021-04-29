@@ -1,5 +1,7 @@
 package com.caoyang.model;
 
+import java.sql.Date;
+
 public class User {
     private int id;
     private String username;
@@ -51,7 +53,8 @@ public class User {
         this. password = password;
     }
     public String getEmail() {
-        return email;|
+        final String email = this.email;
+        return email;
     }
     public void setEmail(String email) {
 
@@ -68,6 +71,21 @@ public class User {
     }
 
     public void setGender(String gender) {
+    }
+
+    public void setSex(String sex) {
+    }
+
+    public void setBirthday(Date birthday) {
+    }
+
+    public String getSex() {
+    }
+
+    public Object getBirthday() {
+    }
+
+    public void setId(String id) {
     }
 }
 
