@@ -24,4 +24,4 @@
     <input required="required" type="submit" value="Save Changes"/>
 
 </form>
-<%@include file="footer.jsp"%>
+<%@include file="zhiqian/footer.jsp"%>

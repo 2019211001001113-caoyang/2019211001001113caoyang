@@ -26,4 +26,4 @@
 </table>
 
 
-<%@include file="footer.jsp"%>
+<%@include file="zhiqian/footer.jsp"%>

@@ -7,7 +7,8 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@WebServLet(urLPatterns = {"/register"}, LoadOnStartup = 1)
+@WebServlet
+        urlPatterns = {"/register"}, LoadOnStartup = 1
 public class RegisterServLet extends HttpServlet {
     @Override
     public void init() throws ServletException {
@@ -18,7 +19,7 @@ public class RegisterServLet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+  request.getRequestDispatcher("WEB-INF/views/register.jsp").forward(request,response);
     }
 
     @Override
@@ -38,12 +39,12 @@ public class RegisterServLet extends HttpServlet {
 
          int n = st.executeUpdate(sql);
          System.out.println("n-->" + n);
-         response.sendRedirect("login.jsp");
 
-
-
-         request.getRequestDispatcher("userList.jsp").forward(request,response);
-        System.out.println("i am RegisterServlet-->dopost()--> after forward()");
+        // response.sendRedirect("login.jsp");
+        // request.getRequestDispatcher("userList.jsp").forward(request,response);
+       // System.out.println("i am RegisterServlet-->dopost()--> after forward()");
+//week  -  9
+      response.sendRedirect("login");
      }catch (SQLException e){
          e.printStackTrace();
      }
