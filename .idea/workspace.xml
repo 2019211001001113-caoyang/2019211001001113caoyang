@@ -9,107 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eba9507-d784-4576-bdbb-c8f11e86ee58" name="Default Changelist" comment="HW.Week 8 commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/AdminHomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/filter/AdmitAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/addProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/productList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/userList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productDetails.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shop.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/zhiqian/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/zhiqian/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/zhiqian/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/zhiqian/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/prettyPhoto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/price-range.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/404/404.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/blog/blog-one.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/blog/blog-three.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/blog/blog-two.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/blog/man-four.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/blog/man-one.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/blog/man-three.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/blog/man-two.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/blog/socials.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/cart/one.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/cart/three.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/cart/two.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/Order-Processing-Services.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/bg_border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/email.jpe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/gallery1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/gallery2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/gallery3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/gallery4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/girl1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/girl2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/girl3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/iframe1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/iframe2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/iframe3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/iframe4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/mail_receive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/more.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/order-icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/ordermgmt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/partner1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/partner2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/partner3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/partner4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/pin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/pricing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/product1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/product2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/product3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/product4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/product5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/product6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/productmgmt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/recommend1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/recommend2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/recommend3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/sale.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/searchicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/shipping.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/home/usermgmt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/product-details/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/product-details/new.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/product-details/rating.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/product-details/share.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/product-details/similar1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/product-details/similar2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/product-details/similar3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shop/advertisement.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shop/product10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shop/product11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shop/product12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shop/product7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shop/product8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shop/product9.jpg" afterDir="false" />
+    <list default="true" id="1eba9507-d784-4576-bdbb-c8f11e86ee58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/IProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/AddProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ProductListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Catagory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Inputstream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Preparedstatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/caoyang/week3/demo/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/caoyang/week3/demo/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updateUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/zhiqian/updateUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/zhiqian/userInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/addProduct.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Dao" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -182,7 +92,11 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.caoyang.model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\java\Dao" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views\zhiqian" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp" />
@@ -376,6 +290,12 @@
       <workItem from="1619827260315" duration="19000" />
       <workItem from="1619832598665" duration="380000" />
       <workItem from="1620822620077" duration="6001000" />
+      <workItem from="1620870896524" duration="230000" />
+      <workItem from="1620917944662" duration="292000" />
+      <workItem from="1621420791583" duration="313000" />
+      <workItem from="1621428539485" duration="2275000" />
+      <workItem from="1621430997454" duration="3560000" />
+      <workItem from="1621476358238" duration="2353000" />
     </task>
     <task id="LOCAL-00001" summary="HW.Week 2 commit">
       <created>1615898186368</created>
@@ -489,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619663430473</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="HW.Week 9 commit">
+      <created>1620871045313</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1620871045313</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +430,8 @@
     <MESSAGE value="HW.Week 6 commit" />
     <MESSAGE value="HW.Week 7 commit" />
     <MESSAGE value="HW.Week 8 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 8 commit" />
+    <MESSAGE value="HW.Week 9 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 9 commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
