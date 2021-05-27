@@ -27,6 +27,9 @@ public class Category() {
         this.action = action;
     }
 
+    public static String findBycategoryId(Connection con, int pid) {
+    }
+
     public int getCategoryId() {
         return categoryId;
     }

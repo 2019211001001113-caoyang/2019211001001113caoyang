@@ -10,16 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eba9507-d784-4576-bdbb-c8f11e86ee58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/IProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/AddProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ProductListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Catagory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Inputstream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Preparedstatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/GetlmgServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ProductDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ShopServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/cart/empty_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/cart/no_order.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/addProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ProductListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ProductListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Catagory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Catagory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/productList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/shop.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/images/cart" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,8 +100,9 @@
       <recent name="com.caoyang.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\java\Dao" />
+      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\images\cart" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\java\Dao" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views\zhiqian" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp" />
     </key>
@@ -116,6 +121,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -296,6 +312,9 @@
       <workItem from="1621428539485" duration="2275000" />
       <workItem from="1621430997454" duration="3560000" />
       <workItem from="1621476358238" duration="2353000" />
+      <workItem from="1621479618288" duration="87000" />
+      <workItem from="1621516520619" duration="315000" />
+      <workItem from="1622082621742" duration="9917000" />
     </task>
     <task id="LOCAL-00001" summary="HW.Week 2 commit">
       <created>1615898186368</created>
@@ -416,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620871045313</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="HW.Week 11 commit">
+      <created>1621479675139</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1621479675139</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +457,8 @@
     <MESSAGE value="HW.Week 7 commit" />
     <MESSAGE value="HW.Week 8 commit" />
     <MESSAGE value="HW.Week 9 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 9 commit" />
+    <MESSAGE value="HW.Week 11 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 11 commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
