@@ -9,6 +9,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 @WebServlet(name = "ProductDetailsServlet", value = "/ProductDetails")
 public class ProductDetailsServlet extends HttpServlet {
@@ -24,6 +25,7 @@ public class ProductDetailsServlet extends HttpServlet {
         IProductDao productDao;
         try {
             List<Product> productList = productDao.findAll(con);
+            Object categoryList;
             request.setAttribute("categoryList",categoryList);
         }catch (SQLException throwables) {
             throwables.printStackTrace();
