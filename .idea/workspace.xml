@@ -10,14 +10,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eba9507-d784-4576-bdbb-c8f11e86ee58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/CartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/UserListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/IOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/caoyang/week3/demo/statement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/AccountDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/OrderDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/OrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab1/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/accountDetails.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/orderList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/orderSuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updateUserView.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/validate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/orderDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/IProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/IProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/caoyang/week3/demo/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/caoyang/week3/demo/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/caoyang/week5/demo/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/caoyang/week5/demo/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/AdminHomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/AdminHomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/CartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/GetlmgServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/GetlmgServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ProductDetailsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ProductDetailsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/userList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ShopServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ShopServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/UpdateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/UpdateUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/UserListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/UserListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/filter/AdmitAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/filter/AdmitAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Catagory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/Catagory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +82,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/caoyang/controller/UpdateUserServlet.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
@@ -76,7 +107,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/images/cart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/lab1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,25 +115,29 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="caoyang.week3.demo" />
       <recent name="com.caoyang.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\images\cart" />
-      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views" />
-      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\java\Dao" />
-      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views\zhiqian" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp" />
+      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views\admin" />
+      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\java\com\caoyang\model" />
+      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\java\Dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views\zhiqian" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Dao" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.63">
@@ -119,15 +154,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -314,7 +347,16 @@
       <workItem from="1622125541295" duration="105000" />
       <workItem from="1622619304776" duration="332000" />
       <workItem from="1622619793791" duration="6322000" />
-      <workItem from="1622686993158" duration="3205000" />
+      <workItem from="1622686993158" duration="3356000" />
+      <workItem from="1622726843056" duration="222000" />
+      <workItem from="1622766847781" duration="5211000" />
+      <workItem from="1623220779899" duration="6423000" />
+      <workItem from="1623227288279" duration="28000" />
+      <workItem from="1623229666811" duration="1739000" />
+      <workItem from="1623241857305" duration="2072000" />
+      <workItem from="1623245638028" duration="2064000" />
+      <workItem from="1623303839875" duration="314000" />
+      <workItem from="1623322910194" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="HW.Week 2 commit">
       <created>1615898186368</created>
@@ -449,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622094205043</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="HW.Week 13 commit">
+      <created>1622690233677</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1622690233677</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +515,8 @@
     <MESSAGE value="HW.Week 9 commit" />
     <MESSAGE value="HW.Week 11 commit" />
     <MESSAGE value="HW.Week 12 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 12 commit" />
+    <MESSAGE value="HW.Week 13 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 13 commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -484,6 +534,11 @@
           <url>file://$PROJECT_DIR$/src/main/webapp/index.jsp</url>
           <line>8</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/caoyang/model/Catagory.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

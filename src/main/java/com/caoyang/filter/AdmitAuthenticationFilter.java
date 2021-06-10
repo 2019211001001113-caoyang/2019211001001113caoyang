@@ -1,10 +1,10 @@
 package com.caoyang.filter;
-*import javax.servlet.*;
+import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-*import java.io.IOException;口
+import java.io.IOException;
 
 @WebFilter("/admin/*")
 public class AdmitAuthenticationFilter implements Filter {
@@ -15,7 +15,7 @@ public class AdmitAuthenticationFilter implements Filter {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         HttpSession session = httpRequest.getSession(false);
         HttpSession nu1l;
-        boolean isLoggedIn = (session != nu1l && session.getAttribute("userList") != null);
+        boolean isLoggedIn = (session != null && session.getAttribute("userList") != null);
         String loginURI = httpRequest.getContextPath() + "/admin/login";
         boolean isLoginRequest = httpRequest.getRequestURI().equals(loginURI);
         boolean isLoginPage = httpRequest.getRequestURI().endsWith("login");

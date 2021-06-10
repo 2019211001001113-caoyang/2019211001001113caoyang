@@ -79,13 +79,16 @@ public class User {
     public void setBirthday(Date birthday) {
     }
 
-    public String getSex() {
+    public void getSex() {
     }
 
-    public Object getBirthday() {
+    public void getBirthday() {
     }
 
     public void setId(String id) {
+    }
+
+    public void getrememberMe() {
     }
 }
 

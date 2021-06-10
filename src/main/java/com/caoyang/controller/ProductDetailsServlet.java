@@ -8,45 +8,44 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet(name = "ProductDetailsServlet", value = "/ProductDetails")
 public class ProductDetailsServlet extends HttpServlet {
-    connection con=null;
+    Connection con=null;
     @Override
     public void init() throws ServletException {
         super.init();
-      con=(connection) getServletContext().getAttribute("con");
+      con=(Connection) getServletContext().getAttribute("con");
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        IProductDao productDao;
+        ProductDao productDao = null;
         try {
             List<Product> productList = productDao.findAll(con);
-            Object categoryList;
-            request.setAttribute("categoryList",categoryList);
-        }catch (SQLException throwables) {
+            Object categoryList = null;
+            request.setAttribute("categoryList", categoryList);
+        } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
         try {
-            if(request.getParameter("id")!=null) {
+            if (request.getParameter("id") != null) {
                 int productId = Integer.parseInt(request.getParameter("id"));
                 ProductDao productionDao = new ProductDao();
                 Product product = productDao.findById(productId, con);
-                request.setAttribute("p",product);
+                request.setAttribute("p", product);
             }
-            }catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-        String path="/WEB-INF/views/productDetails.jsp";
-request.getRequestDispatcher(path).forward(request,response);
-
-
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
-    }
+        String path = "/WEB-INF/views/productDetails.jsp";
+        request.getRequestDispatcher(path).forward(request, response);
 
+
+    }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

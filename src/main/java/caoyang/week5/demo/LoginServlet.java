@@ -17,7 +17,8 @@ import java.sql.SQLException;
 public class LoginServlet extends HttpServlet {
 
 
-    Connection con=null;
+    Connection con = null;
+
     @Override
     public void init() throws ServletException {
         super.init();
@@ -36,55 +37,48 @@ public class LoginServlet extends HttpServlet {
         //for example change password of db = change in java code
 
         //get servletconfig --> getInitParameters --no change
-        String driver= getServletContext().getInitParameter("driver");
-        String url= getServletContext().getInitParameter("url");
-        String username= getServletContext().getInitParameter("username");
-        String password= getServletContext().getInitParameter("password");
+        String driver = getServletContext().getInitParameter("driver");
+        String url = getServletContext().getInitParameter("url");
+        String username = getServletContext().getInitParameter("username");
+        String password = getServletContext().getInitParameter("password");
 
 
         try {
             Class.forName(driver);
-            con= DriverManager.getConnection(url,username,password);
-            System.out.println("init()-->"+con); //ok(use java code) -ok (use config in web.xml) -ok --use(@webservlet)
+            con = DriverManager.getConnection(url, username, password);
+            System.out.println("init()-->" + con); //ok(use java code) -ok (use config in web.xml) -ok --use(@webservlet)
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
 
     }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request,response);
+        request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request, response);
 
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        PrintWriter out= response.getWriter();
+        PrintWriter out = response.getWriter();
         //TODO 3: GET REQUEST PARAMETER - USERNAME AND PASSWORD
-        String username=request.getParameter("username");
-        String password=request.getParameter("password");
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
 
-        UserDao userDao=new UserDao();
-
+        UserDao userDao = new UserDao();
 
 
         try {
-            UserDao userDao=new UserDao();
-            User user= userDao.findByUsernamePassword(con, username, password);
-            if (user!=null) {
 
-                String.rememberMe=request.getParameter("rememberMe");
-             if(!=null && .equals("1")){
-                 Cookie usernameCookie=new Cookie("cUsername",user.getUsername());
-                 Cookie passwordCookie=new Cookie("cPassword",user.getPassword());
-                 Cookie rememberMeCookie=new Cookie("cRememberMe",);
-                 usernameCookie.setMaxAge(5);
-                passwordCookie.setMaxAge(5);
-                 rememberMeCookie.setMaxAge(5);
-                 response.addCookie(usernameCookie);
-                 response.addCookie(passwordCookie);
-                 response.addCookie(rememberMeCookie);
+            User user = userDao.findByUsernamePassword(con, username, password);
+            if (user != null) {
+
+                String rememberMe = request.getParameter("rememberMe");
+
+                if ("1".equals(this)) {
+                    ;
                 }
 
                 HttpSession session = request.getSession();
@@ -100,7 +94,8 @@ request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request,response
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+    }
+}
 
         //TODO 4: VALIDATE USER - SELEECT * FROM USERTABLE WHERE USERNAME='XXX'
         // AND PASSWORD='YYY'

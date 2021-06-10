@@ -2,11 +2,16 @@ package Dao;
 
 import com.caoyang.model.Product;
 
-import java.io.InputStream;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
-public class ProductDao implements  IProductDao{
+public class ProductDao<categoryId> implements  IProductDao{
+    private Object Product;
+
+    public ProductDao() throws SQLException {
+    }
+
     @Override
     public int save(Product product, Connection con) throws SQLException {
         int n = 0;
@@ -40,7 +45,7 @@ public class ProductDao implements  IProductDao{
     }
 
     @Override
-    public Product findById(Integer productId, Connection con) throws SQLException {
+    public com.caoyang.model.Product findById(Integer productId, Connection con) throws SQLException {
         String queryString = "select * from  where productId=?";
         PreparedStatement pt = con. prepareStatement(queryString);
         pt.setInt(1,productId);
@@ -49,79 +54,81 @@ public class ProductDao implements  IProductDao{
         while (rs.next()) {
             product.setProductId(rs.getInt(  "ProductId" ));
             product.setProductName(rs.getString("ProductNane"));
-            product.setProductDescription(rs.getString("ProductDescription");
+            product.setProductDescription(rs.getString("ProductDescription"));
             product.setPrice(rs.getDouble( "Priee"));
             product.setCategoryId(rs . getInt( "CategoryI0"));
             list.add(product);
         }
-        return Product;
+        return (com.caoyang.model.Product) Product;
     }
 
     @Override
     public List<Product> findByCategoryId(int categoryId, Connection con) {
-        return null;
+        return (List<com.caoyang.model.Product>) Product;
     }
 
     List<Product> list=new ArrayList<Product>();
     String queryString = "select * from  where categoryId=?";
-    PreparedStatement pt = con. prepareStatement(queryString);
-        pt.setInt(1,categoryId);
+    private Connection con;
+    PreparedStatement pt = con.prepareStatement(queryString);
+        pt.setInt( 1,"ProductId" ));
     ResultSet rs = pt.executeQuery();
-        while (rs.next()) {
+        while (rs.next();) {
         Product product = new Product();
         product.setProductId(rs.getInt(  "ProductId" ));
         product.setProductName(rs.getString("ProductNane"));
-        product.setProductDescription(rs.getString("ProductDescription");
+        product.setProductDescription(rs.getString("ProductDescription"));
         product.setPrice(rs.getDouble( "Priee"));
         product.setCategoryId(rs . getInt( "CategoryI0"));
         list.add(product);
     }
     @Override
     public List<Product> findByPrice(double minPrice, double maxPrice, Connection con) throws SQLException {
-        return null;
+        return (List<com.caoyang.model.Product>) Product;
     }
 
     @Override
-    public List<Product> findAll(Connection con) throws SQLException {
+    public List<Product>findAll(Connection con) throws SQLException {
         List<Product> list=new ArrayList<Product>();
         String queryString = "select * from  where categoryId=?";
         PreparedStatement pt = con. prepareStatement(queryString);
+        int categoryId;
         pt.setInt(1,categoryId);
         ResultSet rs = pt.executeQuery();
         while (rs.next()) {
             Product product = new Product();
             product.setProductId(rs.getInt(  "ProductId" ));
             product.setProductName(rs.getString("ProductNane"));
-            product.setProductDescription(rs.getString("ProductDescription");
+            product.setProductDescription(rs.getString("ProductDescription"));
             product.setPrice(rs.getDouble( "Priee"));
                     product.setCategoryId(rs . getInt( "CategoryI0"));
                             list.add(product);
         }
             System.out.println("successful");
-            return list;
+            return (List<com.caoyang.model.Product>) Product;
     }
 
     @Override
     public List<Product> findByProductName(String productName, Connection con) throws SQLException {
-        return null;
+        return (List<com.caoyang.model.Product>) Product;
     }
 
     @Override
     public List<Product> getPicture(Integer productId, Connection con) throws SQLException {
-        return null;
+        return (List<com.caoyang.model.Product>) Product;
     }
     public byte[] getPictureById(Integer productId, Connection con) throws SQLException {
-        byte[] imgByte=null;
-        String sql ="seLect picture from product where productId=?" ;
-        PreparedStatement pt=con.prepareStatement (sql) ;
-        pt.setInt(1,productId);
-        ResultSet rs=pt.executeQuery();
+        byte[] imgByte = null;
+        String sql = "seLect picture from product where productId=?";
+        PreparedStatement pt = con.prepareStatement(sql);
+        pt.setInt(1, productId);
+        ResultSet rs = pt.executeQuery();
         while (rs.next()) {
             Blob blob = rs.getBlob("picture");
             byte[] imgBytes = blob.getBytes(1, (int) blob.length());
         }
+
         byte[] imgBytes;
-        return  imgBytes;
 
-
+    }
 }

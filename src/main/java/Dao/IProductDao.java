@@ -1,8 +1,8 @@
 package Dao;
 
+import com.caoyang.model.Product;
 import com.dabing.model.Product;
 
-import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;

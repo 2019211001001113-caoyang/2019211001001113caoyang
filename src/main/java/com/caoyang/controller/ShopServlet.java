@@ -1,5 +1,6 @@
 package com.caoyang.controller;
 
+import Dao.IProductDao;
 import Dao.ProductDao;
 import com.caoyang.model.Product;
 
@@ -9,6 +10,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 
 @WebServlet(name = "ShopServlet", value = "/ShopServlet")
 public class ShopServlet extends HttpServlet {
@@ -22,7 +24,9 @@ public class ShopServlet extends HttpServlet {
         protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         try {
+            ProductDao productDao = null;
             List<Product> productList = productDao.findAll(con);
+            Object categoryList = null;
             request.setAttribute("categoryList",categoryList);
         }catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -35,9 +39,10 @@ public class ShopServlet extends HttpServlet {
                     List<Product> productList = productDao.findAll(con);
                     request.setAttribute("productList", productList);
                 }
-                eLse {
-                    int catId=Integer.parseInt(request.getParameter("categoryId");
-                   List<Product> productList =  productDao.findByCategoryId(catId,con)
+                else {
+
+                    int catId = 0;
+                    List<Product> productList =  productDao.findByCategoryId(catId,con);
                     request.setAttribute("productList", productList);
                 }
             }catch (SQLException throwables) {

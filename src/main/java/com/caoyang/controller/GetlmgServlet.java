@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 @WebServlet(name = "GetlmgServlet", value = "/Getlmg")
 public class GetlmgServlet extends HttpServlet {
-    connection con = null;
+    Connection con = null;
     @Override
     public void init() throws ServletException{
         super.init();
@@ -27,26 +27,19 @@ public class GetlmgServlet extends HttpServlet {
         byte[] imgByte = new byte[0];
         try {
             imgByte = productDao.getPictureById(id, con);
-            if (imgByte != null) {
-                response.setContentType("image/gif");//which type of data send back
-                OutputStream out = response.getOutputStream();
-                out.write(imgByte);
-                out.flush();
-            }catch(SQLException throwables){
-                throwables.printStackTrace();
-            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
-
-
-
-
-
-
-
-
-
-
-
-        @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        if (imgByte != null) {
+            response.setContentType("image/gif");//which type of data send back
+            OutputStream out = response.getOutputStream();
+            out.write(imgByte);
+            out.flush();
+        }
     }
+
+
+    @Override
+    protected void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    }
+}

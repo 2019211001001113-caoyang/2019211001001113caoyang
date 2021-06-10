@@ -35,23 +35,23 @@ if(request.getParameter("action")==null) {
         throwables.printStackTrace();
     }
 } else if(request.getParameter("action").equals("remove")){
-        remove(request);
+        remove(request,response);
     }
 } else{
             response.sendRedirect("login");
         }
     }
 
-    private void remove(HttpServletRequest request,HttpServletResponse response) {
-     List<Item> cart(List<Item>) request.getSession().getAttribute("cart");
+    private void remove(HttpServletRequest request,HttpServletResponse response) throws IOException {
+     List<Item> cart=(List<Item>) request.getSession().getAttribute("cart");
      int id=0;
      if(request.getParameter("productId")!=null){
-             id=Integer.parseInt(request.getParameter("productId));
+             id=Integer.parseInt(request.getParameter("productId"));
     }
 
     int index=isExisting(id,cart);
     cart.remove(index);
-    request.getSession().setAttribute( s: "cart",cart) ;
+    request.getSession().setAttribute("cart",cart); ;
     String path=request.getContextPath()+"/cart";
     response.sendRedirect(path);
     }
@@ -64,7 +64,7 @@ if(request.getParameter("action")==null) {
            return;
        }
    ProductDao productionDao=new ProductDao();
-       if(session.getAttribute("cart"))==null){
+       if(session.getAttribute("cart")==null){
     List<Item> cart=new ArrayList<Item>();
             Product p=productionDao.findById(id,con);
             cart.add(new Item(p, quantity));
@@ -73,7 +73,7 @@ if(request.getParameter("action")==null) {
         List<Item> cart=(List<Item>) session.getAttribute("cart");
         int index=isExisting(id,cart);
         if(index==-1){
-            ProductDao productDao;
+            ProductDao productDao = null;
             Product p=productDao.findById(id,con);
             cart.add(new Item(p, 1));
         }else {
@@ -94,10 +94,10 @@ if(request.getParameter("action")==null) {
     return -1;
             }
 
-     private void displayCart(HttpServletRequest request, HttpServletResponse response){
+     private void displayCart(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("message","Your Cart");
         String path="/WEB- INF/views/cart.jsp";
-        request.getRequestDispatcher(path).forward((request,response));
+        request.getRequestDispatcher(path).forward(request,response);
         }
 
     @Override

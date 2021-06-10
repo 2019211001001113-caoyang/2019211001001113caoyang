@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Category() {
+class Category {
 
     private  int categoryId;
     private  String categoryName;
@@ -28,6 +28,7 @@ public class Category() {
     }
 
     public static String findBycategoryId(Connection con, int pid) {
+        return null;
     }
 
     public int getCategoryId() {
@@ -73,7 +74,7 @@ public class Category() {
     }
     public static List<Category> findAllCategory(Connection con) throws SQLException {
     String sql="select * from Category";
-    List<Categogy>  list= new ArrayList<>();
+    List<Category>  list= new ArrayList<>();
         PreparedStatement pt=con.prepareStatement(sql);
         ResultSet rs=pt.executeQuery();
         while(rs.next()){
@@ -84,12 +85,12 @@ public class Category() {
             list.add(c);
 
     }
-        return list:
+        return list;
 }
 public  static  String findByCategoryId(Connection con, int categoryId) throws SQLException {
     String sql="select * from Category";
     PreparedStatement pt=con.prepareStatement(sql);
-    pt.setInt(1,categoryId);
+
     ResultSet rs=pt.executeQuery();
     String categoryName=null;
     while(rs.next()){
