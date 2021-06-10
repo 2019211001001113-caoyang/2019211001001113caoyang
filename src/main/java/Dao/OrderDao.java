@@ -14,12 +14,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
 
-import com.dabing.model.Item;
-import com.dabing.model.Order;
+import com.caoyang.model.Item;
+import com.caoyang.model.Order;
 
-import com.dabing.model.Product;
+import com.caoyang.model.Product;
 
 /**
  * A data access object (DAO) providing persistence and search support for Order

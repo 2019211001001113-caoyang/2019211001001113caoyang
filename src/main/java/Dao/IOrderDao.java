@@ -4,8 +4,9 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.dabing.model.Item;
-import com.dabing.model.Order;
+import com.caoyang.model.Order;
+import com.caoyang.model.Item;
+import com.caoyang.model.Order;
 
 public interface IOrderDao {
 
