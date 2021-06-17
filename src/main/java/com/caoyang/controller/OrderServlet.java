@@ -33,11 +33,11 @@ public class OrderServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        Payment payment;
+        Payment payment = null;
         List<Payment> paymentTypeList=payment.findAllPayment(con);
         request.setAttribute("paymentTypeList",paymentTypeList);
      String Path="/WEB-INF/views/order.jsp";
-        String path;
+        String path = null;
         request.getRequestDispatcher(path).forward(request,response);
     }
 
@@ -60,7 +60,7 @@ public class OrderServlet extends HttpServlet {
         double orderTotal = request.getParameter("orderTotal") != null ? Double.parseDouble(request.getParameter("orderTotal")) : 0.0;
 
         String message = null;
-        String firstName;
+        String firstName = null;
         if (customerId == 0 || paymentId == 0 || firstName == null || firstName.trim().length() == 0 || phone == null || phone.trim().length() == 0 ||
                 address1 == null || address1.trim().length() == 0 || postalCode == null || postalCode.trim().length() == 0) {
 
@@ -90,10 +90,10 @@ public class OrderServlet extends HttpServlet {
         o.setNotes(notes);
         o.setPostalCode(postalCode);
         o.setOrderTotal(orderTotal);
-        HttpSession session = request.getSession("false");
+        HttpSession session = request.getSession(Boolean.parseBoolean("false"));
         if (session != null && session.getAttribute("user") != null) {
             ArrayList<Item> cartItems = (ArrayList<Item>) session.getAttribute("cart");
-            o.setOrderDetails(new HashSet<>(cartItems));/
+            o.setOrderDetails(new HashSet<>(cartItems));
         }
         OrderDao orderDao = new OrderDao();
         int n = 0;
@@ -110,16 +110,3 @@ public class OrderServlet extends HttpServlet {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-}

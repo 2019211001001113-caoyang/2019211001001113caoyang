@@ -71,9 +71,9 @@ public class ProductDao<categoryId> implements  IProductDao{
     String queryString = "select * from  where categoryId=?";
     private Connection con;
     PreparedStatement pt = con.prepareStatement(queryString);
-        pt.setInt( 1,"ProductId" ));
+        pt.setInt( 1,"ProductId" )
     ResultSet rs = pt.executeQuery();
-        while (rs.next();) {
+        while (rs.next()) {
         Product product = new Product();
         product.setProductId(rs.getInt(  "ProductId" ));
         product.setProductName(rs.getString("ProductNane"));
@@ -127,8 +127,6 @@ public class ProductDao<categoryId> implements  IProductDao{
             Blob blob = rs.getBlob("picture");
             byte[] imgBytes = blob.getBytes(1, (int) blob.length());
         }
-
         byte[] imgBytes;
-
     }
 }

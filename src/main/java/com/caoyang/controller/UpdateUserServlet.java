@@ -16,15 +16,17 @@ import java.text.SimpleDateFormat;
 @WebServlet(name = "UpdateUserServlet", value = "/updateUser")
 public class UpdateUserServlet extends HttpServlet {
     Connection con = null;
+
     @Override
     public void init() throws ServletException {
-        con = (Connection)getServletContext().getAttribute("con");
+        con = (Connection) getServletContext().getAttribute("con");
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("./WEB-INFiews/updateUser.jsp").forward(request,response);
+        request.getRequestDispatcher("./WEB-INFiews/updateUser.jsp").forward(request, response);
     }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
@@ -35,7 +37,7 @@ public class UpdateUserServlet extends HttpServlet {
         Date birthday = Date.valueOf(request.getParameter("birthday"));
         String password = request.getParameter("password");
 
-        User user =new User();
+        User user = new User();
         user.setId(id);
         user.setUsername(username);
         user.setEmail(email);
@@ -44,17 +46,14 @@ public class UpdateUserServlet extends HttpServlet {
         user.setPassword(password);
         UserDao userDao = new UserDao();
         try {
-            userDao.updateUser(con,user);
+            userDao.updateUser(con, user);
         } catch (SQLException e1) {
             e1.printStackTrace();
         }
-//        request.setAttribute("user",user);
+        /* request.setAttribute("user",user); */
         HttpSession session = request.getSession(false);
-        assert  session!=null;
-        session.setAttribute("user",user);
-        request.getRequestDispatcher("accountDetails").forward(request,response);
-    }catch (SQLException throwables){
-        throwables.printStackTrace();
-    }
+        assert session != null;
+        session.setAttribute("user", user);
+        request.getRequestDispatcher("accountDetails").forward(request, response);
 
 }

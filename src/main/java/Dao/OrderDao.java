@@ -22,9 +22,9 @@ import com.caoyang.model.Product;
 
 /**
  * A data access object (DAO) providing persistence and search support for Order
- * entities. Transaction control of the save(), update() and delete() operations
- * can directly support Spring container-managed transactions or they can be
- * augmented to handle user-managed Spring transactions. Each of these methods
+ * entities. Transaction control of thner-managed transactions or they can be
+ * augmented to handle user-managed Se save(), update() and delete() operations
+ *  * can directly support Spring contaipring transactions. Each of these methods
  * provides additional information for how to configure it for the desired type
  * of transaction control.
  * 
@@ -232,7 +232,7 @@ public class OrderDao implements IOrderDao {
 		return orderList;
 	}
 	
-@Override
+   @Override
 	public static List<Item> findItemsByOrderId(Connection con, int orderId) {
 		List<Item> itemList=new ArrayList<Item>();
 		try {
