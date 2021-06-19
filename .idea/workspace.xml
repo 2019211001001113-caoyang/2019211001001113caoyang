@@ -10,22 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eba9507-d784-4576-bdbb-c8f11e86ee58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/AdminOrderListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/ContactUsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab2/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab2/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab2/caoyangFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab2/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab2/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab2/validate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab2/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab3/CalServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab3/Calculate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab3/HitCountServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lab3/cal.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/OrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/OrderServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/UpdateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caoyang/controller/UpdateUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/orderList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/orderList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lab1/assignment1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lab1/assignment2/welcome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +29,8 @@
         <option value="package-info" />
         <option value="package.json" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -60,6 +51,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/lab1/assignment1.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/caoyang/controller/UpdateUserServlet.java" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -85,7 +77,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/lab3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -104,11 +96,11 @@
       <recent name="com.caoyang.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\lab3" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\java\com" />
+      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp" />
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\lab1" />
-      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\lab1\assignment2" />
-      <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\java\com\lab1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dell\IdeaProjects\2019211001001113caoyang\src\main\webapp\WEB-INF\views\zhiqian" />
@@ -128,19 +120,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -341,7 +320,9 @@
       <workItem from="1623371156113" duration="2585000" />
       <workItem from="1623374557577" duration="233000" />
       <workItem from="1623894693039" duration="762000" />
-      <workItem from="1623896078865" duration="1542000" />
+      <workItem from="1623896078865" duration="1792000" />
+      <workItem from="1623977248381" duration="523000" />
+      <workItem from="1623977811993" duration="1721000" />
     </task>
     <task id="LOCAL-00001" summary="HW.Week 2 commit">
       <created>1615898186368</created>
@@ -497,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623332875548</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="HW.Week 15 commit">
+      <created>1623897806803</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1623897806803</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +504,8 @@
     <MESSAGE value="HW.Week 12 commit" />
     <MESSAGE value="HW.Week 13 commit" />
     <MESSAGE value="HW.Week 14 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 14 commit" />
+    <MESSAGE value="HW.Week 15 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW.Week 15 commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -539,6 +528,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/caoyang/model/Catagory.java</url>
           <line>94</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/contactUs.jsp</url>
+          <line>6</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
